@@ -1,4 +1,9 @@
 class Solution:
     def differenceOfSums(self, n: int, m: int) -> int:
-        return sum(x if x % m != 0 else -x for x in range(1, n + 1))
-        
+        S=n*(n+1)//2
+        k=n//m
+        Q = m*(k*(k+1))//2
+        S=S-Q
+        return S-Q
+
+          
